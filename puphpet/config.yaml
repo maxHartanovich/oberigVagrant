@@ -85,8 +85,28 @@ apache:
         vac:
             servername: vac.dev
             serveraliases:
-                - vac.lo.com
+                - vac.dev.com
             docroot: /var/www/vac2
+            port: '80'
+            setenv:
+                - 'APP_ENV dev'
+            override:
+                - All
+            options:
+                - Indexes
+                - FollowSymLinks
+                - MultiViews
+            engine: php
+            custom_fragment: ''
+            ssl_cert: ''
+            ssl_key: ''
+            ssl_chain: ''
+            ssl_certs_dir: ''
+        vacapi:
+            servername: vacapi.dev
+            serveraliases:
+                - vacapi.dev.com
+            docroot: /var/www/vacsapi
             port: '80'
             setenv:
                 - 'APP_ENV dev'
