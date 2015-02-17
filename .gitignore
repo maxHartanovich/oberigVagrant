@@ -1,4 +1,7 @@
 .idea
 .vagrant
 .DS_Store
-www/*
+www/default
+www/html
+www/vac2
+www/vacsapi
