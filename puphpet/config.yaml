@@ -86,6 +86,7 @@ apache:
             servername: vac.dev
             serveraliases:
                 - www.vac.dev.com
+                - vac.lo.com
             docroot: /var/www/vac2
             port: '80'
             setenv:
@@ -170,6 +171,8 @@ php:
         display_errors: On
         error_reporting: '-1'
         session.save_path: /var/lib/php/session
+        upload_max_filesize: 2000M
+        post_max_size: 2000M
     timezone: America/Chicago
     mod_php: 0
 hhvm:
