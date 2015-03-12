@@ -219,7 +219,7 @@ mysql:
     install: '1'
     override_options: {  }
     root_password: '123'
-    adminer: 0
+    adminer: 1
     databases:
         jqIFblvS3OZD:
             grant:
