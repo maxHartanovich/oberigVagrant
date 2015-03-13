@@ -67,6 +67,8 @@ server:
         - vim
         - git
         - unzip
+        - libzmq3
+        - libzmq3-dev
 firewall:
     install: '1'
     rules: null
