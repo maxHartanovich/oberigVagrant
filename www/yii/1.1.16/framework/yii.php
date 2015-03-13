@@ -22,6 +22,13 @@ require(dirname(__FILE__).'/YiiBase.php');
  * @package system
  * @since 1.0
  */
-class Yii extends YiiBase
-{
+class Yii extends YiiBase {
+    /**
+     * @static
+     * @return CWebApplication | CWebUser | CConsoleCommand
+     */
+    public static function app()
+    {
+        return parent::app();
+    }
 }
