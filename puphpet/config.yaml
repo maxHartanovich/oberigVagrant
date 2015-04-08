@@ -166,6 +166,7 @@ php:
             - sqlite
             - imagick
             - gd
+            - xsl
         pear: {  }
         pecl:
             - pecl_http
@@ -175,7 +176,7 @@ php:
         session.save_path: /var/lib/php/session
         upload_max_filesize: 2000M
         post_max_size: 2000M
-    timezone: America/Chicago
+    timezone: Europe/Kiev
     mod_php: 0
 hhvm:
     install: '0'
