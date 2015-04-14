@@ -18,7 +18,7 @@ http://vacapi.dev/
 Адрес Mysql: 127.0.0.1
 Пользователь: root
 Пароль: 123
-Адрес SSH: 192.168.56.101
+Адрес SSH: 192.168.56.102
 Пользователь: vagrant
 Ключ SSH: puphpet/files/dot/ssh/id_rsa
 

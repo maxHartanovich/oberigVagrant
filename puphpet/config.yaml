@@ -4,8 +4,8 @@ vagrantfile-local:
         box: puphpet/ubuntu1404-x32
         box_url: puphpet/ubuntu1404-x32
         hostname: ''
-        memory: '512'
-        cpus: '1'
+        memory: '1024'
+        cpus: '2'
         chosen_provider: virtualbox
         network:
             private_network: 192.168.56.102
@@ -184,6 +184,7 @@ php:
             - sqlite
             - imagick
             - gd
+            - xsl
         pear: {  }
         pecl:
             - pecl_http
@@ -193,7 +194,7 @@ php:
         session.save_path: /var/lib/php/session
         upload_max_filesize: 2000M
         post_max_size: 2000M
-    timezone: America/Chicago
+    timezone: Europe/Kiev
     mod_php: 0
 hhvm:
     install: '0'
