@@ -185,6 +185,7 @@ php:
             - imagick
             - gd
             - xsl
+            - imap
         pear: {  }
         pecl:
             - pecl_http
