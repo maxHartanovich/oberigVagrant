@@ -125,8 +125,8 @@ apache:
             ssl_key: ''
             ssl_chain: ''
             ssl_certs_dir: ''
-        local.kngr:
-            servername: local.knrg.co
+        vacshort:
+            servername: local.kngr.co
             docroot: /var/www/shortenURL_API
             port: '80'
             setenv:
@@ -188,6 +188,7 @@ php:
         pear: {  }
         pecl:
             - pecl_http
+            - mongo
     ini:
         display_errors: On
         error_reporting: '-1'
@@ -274,7 +275,7 @@ sqlite:
     adminer: 0
     databases: {  }
 mongodb:
-    install: '0'
+    install: '1'
     settings:
         auth: 1
         port: '27017'
