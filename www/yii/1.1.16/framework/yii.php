@@ -25,7 +25,7 @@ require(dirname(__FILE__).'/YiiBase.php');
 class Yii extends YiiBase {
     /**
      * @static
-     * @return CWebApplication | CWebUser | CConsoleCommand
+     * @return CApplication | CWebApplication | CWebUser | CConsoleCommand
      */
     public static function app()
     {
