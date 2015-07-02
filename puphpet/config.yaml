@@ -143,6 +143,122 @@ apache:
             ssl_key: ''
             ssl_chain: ''
             ssl_certs_dir: ''
+        kngr:
+            servername: kngr.loc.com
+            serveraliases:
+                - www.kngr.loc.com
+            docroot: /var/www/vac2/account/web
+            aliases:
+                - {path: /var/www/vac2/images, alias: /images}
+                - {path: /var/www/vac2/files, alias: /files}
+                - {path: /var/www/vac2/fonts, alias: /fonts}
+            port: '80'
+            setenv:
+                - 'APP_ENV dev'
+            override:
+                - All
+            options:
+                - Indexes
+                - FollowSymLinks
+                - MultiViews
+            engine: php
+            custom_fragment: ''
+            ssl_cert: ''
+            ssl_key: ''
+            ssl_chain: ''
+            ssl_certs_dir: ''
+        kngrnotes:
+            servername: note.kngr.loc.com
+            serveraliases:
+                - www.note.kngr.loc.com
+            docroot: /var/www/vac2/note/web
+            aliases:
+                - {path: /var/www/vac2/images, alias: /images}
+                - {path: /var/www/vac2/files, alias: /files}
+                - {path: /var/www/vac2/fonts, alias: /fonts}
+            port: '80'
+            setenv:
+                - 'APP_ENV dev'
+            override:
+                - All
+            options:
+                - Indexes
+                - FollowSymLinks
+                - MultiViews
+            engine: php
+            custom_fragment: ''
+            ssl_cert: ''
+            ssl_key: ''
+            ssl_chain: ''
+            ssl_certs_dir: ''
+        kngrsocial:
+            servername: social.kngr.loc.com
+            serveraliases:
+                - www.social.kngr.loc.com
+            docroot: /var/www/vac2/social/web
+            aliases:
+                - {path: /var/www/vac2/images, alias: /images}
+                - {path: /var/www/vac2/files, alias: /files}
+                - {path: /var/www/vac2/fonts, alias: /fonts}
+            port: '80'
+            setenv:
+                - 'APP_ENV dev'
+            override:
+                - All
+            options:
+                - Indexes
+                - FollowSymLinks
+                - MultiViews
+            engine: php
+            custom_fragment: ''
+            ssl_cert: ''
+            ssl_key: ''
+            ssl_chain: ''
+            ssl_certs_dir: ''
+        kngrdatacenter:
+            servername: datacenter.kngr.loc.com
+            serveraliases:
+                - www.datacenter.kngr.loc.com
+            docroot: /var/www/vac2/datacenter/web
+            aliases:
+                - {path: /var/www/vac2/images, alias: /images}
+                - {path: /var/www/vac2/files, alias: /files}
+                - {path: /var/www/vac2/fonts, alias: /fonts}
+            port: '80'
+            setenv:
+                - 'APP_ENV dev'
+            override:
+                - All
+            options:
+                - Indexes
+                - FollowSymLinks
+                - MultiViews
+            engine: php
+            custom_fragment: ''
+            ssl_cert: ''
+            ssl_key: ''
+            ssl_chain: ''
+            ssl_certs_dir: ''
+        zohoinvoices:
+            servername: zoho.loc.com
+            serveraliases:
+                - www.zoho.loc.com
+            docroot: /var/www/zoho/web
+            port: '80'
+            setenv:
+                - 'APP_ENV dev'
+            override:
+                - All
+            options:
+                - Indexes
+                - FollowSymLinks
+                - MultiViews
+            engine: php
+            custom_fragment: ''
+            ssl_cert: ''
+            ssl_key: ''
+            ssl_chain: ''
+            ssl_certs_dir: ''
     mod_pagespeed: 0
 nginx:
     install: '0'

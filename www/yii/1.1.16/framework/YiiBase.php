@@ -271,6 +271,7 @@ class YiiBase
 		if(($pos=strrpos($alias,'\\'))!==false) // a class name in PHP 5.3 namespace format
 		{
 			$namespace=str_replace('\\','.',ltrim(substr($alias,0,$pos),'\\'));
+            $r = ($path=self::getPathOfAlias($namespace))!==false;
 			if(($path=self::getPathOfAlias($namespace))!==false)
 			{
 				$classFile=$path.DIRECTORY_SEPARATOR.substr($alias,$pos+1).'.php';
