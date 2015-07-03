@@ -239,6 +239,78 @@ apache:
             ssl_key: ''
             ssl_chain: ''
             ssl_certs_dir: ''
+        kngrtasks:
+            servername: tasks.kngr.loc.com
+            serveraliases:
+                - www.tasks.kngr.loc.com
+            docroot: /var/www/vac2/tasks/web
+            aliases:
+                - {path: /var/www/vac2/images, alias: /images}
+                - {path: /var/www/vac2/files, alias: /files}
+                - {path: /var/www/vac2/fonts, alias: /fonts}
+            port: '80'
+            setenv:
+                - 'APP_ENV dev'
+            override:
+                - All
+            options:
+                - Indexes
+                - FollowSymLinks
+                - MultiViews
+            engine: php
+            custom_fragment: ''
+            ssl_cert: ''
+            ssl_key: ''
+            ssl_chain: ''
+            ssl_certs_dir: ''
+        kngrcontact:
+            servername: contact.kngr.loc.com
+            serveraliases:
+                - www.contact.kngr.loc.com
+            docroot: /var/www/vac2/contact/web
+            aliases:
+                - {path: /var/www/vac2/images, alias: /images}
+                - {path: /var/www/vac2/files, alias: /files}
+                - {path: /var/www/vac2/fonts, alias: /fonts}
+            port: '80'
+            setenv:
+                - 'APP_ENV dev'
+            override:
+                - All
+            options:
+                - Indexes
+                - FollowSymLinks
+                - MultiViews
+            engine: php
+            custom_fragment: ''
+            ssl_cert: ''
+            ssl_key: ''
+            ssl_chain: ''
+            ssl_certs_dir: ''
+        kngrvm:
+            servername: vm.kngr.loc.com
+            serveraliases:
+                - www.vm.kngr.loc.com
+            docroot: /var/www/vac2/vm/web
+            aliases:
+                - {path: /var/www/vac2/images, alias: /images}
+                - {path: /var/www/vac2/files, alias: /files}
+                - {path: /var/www/vac2/fonts, alias: /fonts}
+            port: '80'
+            setenv:
+                - 'APP_ENV dev'
+            override:
+                - All
+            options:
+                - Indexes
+                - FollowSymLinks
+                - MultiViews
+            engine: php
+            custom_fragment: ''
+            ssl_cert: ''
+            ssl_key: ''
+            ssl_chain: ''
+            ssl_certs_dir: ''
         zohoinvoices:
             servername: zoho.loc.com
             serveraliases:
