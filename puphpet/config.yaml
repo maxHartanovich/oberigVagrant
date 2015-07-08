@@ -152,6 +152,7 @@ apache:
                 - {path: /var/www/vac2/images, alias: /images}
                 - {path: /var/www/vac2/files, alias: /files}
                 - {path: /var/www/vac2/fonts, alias: /fonts}
+                - {path: /var/www/vac2/mail/web/mailvac, alias: /mailvac}
             port: '80'
             setenv:
                 - 'APP_ENV dev'
@@ -176,6 +177,7 @@ apache:
                 - {path: /var/www/vac2/images, alias: /images}
                 - {path: /var/www/vac2/files, alias: /files}
                 - {path: /var/www/vac2/fonts, alias: /fonts}
+                - {path: /var/www/vac2/mail/web/mailvac, alias: /mailvac}
             port: '80'
             setenv:
                 - 'APP_ENV dev'
@@ -200,6 +202,7 @@ apache:
                 - {path: /var/www/vac2/images, alias: /images}
                 - {path: /var/www/vac2/files, alias: /files}
                 - {path: /var/www/vac2/fonts, alias: /fonts}
+                - {path: /var/www/vac2/mail/web/mailvac, alias: /mailvac}
             port: '80'
             setenv:
                 - 'APP_ENV dev'
@@ -224,6 +227,7 @@ apache:
                 - {path: /var/www/vac2/images, alias: /images}
                 - {path: /var/www/vac2/files, alias: /files}
                 - {path: /var/www/vac2/fonts, alias: /fonts}
+                - {path: /var/www/vac2/mail/web/mailvac, alias: /mailvac}
             port: '80'
             setenv:
                 - 'APP_ENV dev'
@@ -248,6 +252,7 @@ apache:
                 - {path: /var/www/vac2/images, alias: /images}
                 - {path: /var/www/vac2/files, alias: /files}
                 - {path: /var/www/vac2/fonts, alias: /fonts}
+                - {path: /var/www/vac2/mail/web/mailvac, alias: /mailvac}
             port: '80'
             setenv:
                 - 'APP_ENV dev'
@@ -272,6 +277,7 @@ apache:
                 - {path: /var/www/vac2/images, alias: /images}
                 - {path: /var/www/vac2/files, alias: /files}
                 - {path: /var/www/vac2/fonts, alias: /fonts}
+                - {path: /var/www/vac2/mail/web/mailvac, alias: /mailvac}
             port: '80'
             setenv:
                 - 'APP_ENV dev'
@@ -296,6 +302,107 @@ apache:
                 - {path: /var/www/vac2/images, alias: /images}
                 - {path: /var/www/vac2/files, alias: /files}
                 - {path: /var/www/vac2/fonts, alias: /fonts}
+                - {path: /var/www/vac2/mail/web/mailvac, alias: /mailvac}
+            port: '80'
+            setenv:
+                - 'APP_ENV dev'
+            override:
+                - All
+            options:
+                - Indexes
+                - FollowSymLinks
+                - MultiViews
+            engine: php
+            custom_fragment: ''
+            ssl_cert: ''
+            ssl_key: ''
+            ssl_chain: ''
+            ssl_certs_dir: ''
+        kngrmusic:
+            servername: music.kngr.loc.com
+            serveraliases:
+                - www.music.kngr.loc.com
+            docroot: /var/www/vac2/music/web
+            aliases:
+                - {path: /var/www/vac2/images, alias: /images}
+                - {path: /var/www/vac2/files, alias: /files}
+                - {path: /var/www/vac2/fonts, alias: /fonts}
+                - {path: /var/www/vac2/mail/web/mailvac, alias: /mailvac}
+            port: '80'
+            setenv:
+                - 'APP_ENV dev'
+            override:
+                - All
+            options:
+                - Indexes
+                - FollowSymLinks
+                - MultiViews
+            engine: php
+            custom_fragment: ''
+            ssl_cert: ''
+            ssl_key: ''
+            ssl_chain: ''
+            ssl_certs_dir: ''
+        kngrvideo:
+            servername: video.kngr.loc.com
+            serveraliases:
+                - www.video.kngr.loc.com
+            docroot: /var/www/vac2/video/web
+            aliases:
+                - {path: /var/www/vac2/images, alias: /images}
+                - {path: /var/www/vac2/files, alias: /files}
+                - {path: /var/www/vac2/fonts, alias: /fonts}
+                - {path: /var/www/vac2/mail/web/mailvac, alias: /mailvac}
+            port: '80'
+            setenv:
+                - 'APP_ENV dev'
+            override:
+                - All
+            options:
+                - Indexes
+                - FollowSymLinks
+                - MultiViews
+            engine: php
+            custom_fragment: ''
+            ssl_cert: ''
+            ssl_key: ''
+            ssl_chain: ''
+            ssl_certs_dir: ''
+        kngrcalendar:
+            servername: calendar.kngr.loc.com
+            serveraliases:
+                - www.calendar.kngr.loc.com
+            docroot: /var/www/vac2/calendar/web
+            aliases:
+                - {path: /var/www/vac2/images, alias: /images}
+                - {path: /var/www/vac2/files, alias: /files}
+                - {path: /var/www/vac2/fonts, alias: /fonts}
+                - {path: /var/www/vac2/mail/web/mailvac, alias: /mailvac}
+            port: '80'
+            setenv:
+                - 'APP_ENV dev'
+            override:
+                - All
+            options:
+                - Indexes
+                - FollowSymLinks
+                - MultiViews
+            engine: php
+            custom_fragment: ''
+            ssl_cert: ''
+            ssl_key: ''
+            ssl_chain: ''
+            ssl_certs_dir: ''
+        kngrmail:
+            servername: mail.kngr.loc.com
+            serveraliases:
+                - www.mail.kngr.loc.com
+            docroot: /var/www/vac2/mail/web
+            aliases:
+                - {path: /var/www/vac2/images, alias: /images}
+                - {path: /var/www/vac2/files, alias: /files}
+                - {path: /var/www/vac2/fonts, alias: /fonts}
+                - {path: /var/www/vac2/mail/web/mailvac, alias: /mailvac}
             port: '80'
             setenv:
                 - 'APP_ENV dev'
