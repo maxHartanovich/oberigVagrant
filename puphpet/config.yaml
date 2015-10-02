@@ -108,8 +108,128 @@ apache:
         vacapi:
             servername: vacapi.dev
             serveraliases:
-                - www.vacapi.dev.com
-            docroot: /var/www/vacsapi
+                - www.vacapi.dev
+            docroot: /var/www/vacsapi/api/web
+            port: '80'
+            setenv:
+                - 'APP_ENV dev'
+            override:
+                - All
+            options:
+                - Indexes
+                - FollowSymLinks
+                - MultiViews
+            engine: php
+            custom_fragment: ''
+            ssl_cert: ''
+            ssl_key: ''
+            ssl_chain: ''
+            ssl_certs_dir: ''
+        vacapi_calendar:
+            servername: calendar.vacapi.dev
+            serveraliases:
+                - www.calendar.vacapi.dev
+            docroot: /var/www/vacsapi/calendar/web
+            port: '80'
+            setenv:
+                - 'APP_ENV dev'
+            override:
+                - All
+            options:
+                - Indexes
+                - FollowSymLinks
+                - MultiViews
+            engine: php
+            custom_fragment: ''
+            ssl_cert: ''
+            ssl_key: ''
+            ssl_chain: ''
+            ssl_certs_dir: ''
+        vacapi_contacts:
+            servername: contacts.vacapi.dev
+            serveraliases:
+                - www.contacts.vacapi.dev
+            docroot: /var/www/vacsapi/contact/web
+            port: '80'
+            setenv:
+                - 'APP_ENV dev'
+            override:
+                - All
+            options:
+                - Indexes
+                - FollowSymLinks
+                - MultiViews
+            engine: php
+            custom_fragment: ''
+            ssl_cert: ''
+            ssl_key: ''
+            ssl_chain: ''
+            ssl_certs_dir: ''
+        vacapi_mail:
+            servername: mail.vacapi.dev
+            serveraliases:
+                - www.mail.vacapi.dev
+            docroot: /var/www/vacsapi/mail/web
+            port: '80'
+            setenv:
+                - 'APP_ENV dev'
+            override:
+                - All
+            options:
+                - Indexes
+                - FollowSymLinks
+                - MultiViews
+            engine: php
+            custom_fragment: ''
+            ssl_cert: ''
+            ssl_key: ''
+            ssl_chain: ''
+            ssl_certs_dir: ''
+        vacapi_profile:
+            servername: profile.vacapi.dev
+            serveraliases:
+                - www.profile.vacapi.dev
+            docroot: /var/www/vacsapi/profile/web
+            port: '80'
+            setenv:
+                - 'APP_ENV dev'
+            override:
+                - All
+            options:
+                - Indexes
+                - FollowSymLinks
+                - MultiViews
+            engine: php
+            custom_fragment: ''
+            ssl_cert: ''
+            ssl_key: ''
+            ssl_chain: ''
+            ssl_certs_dir: ''
+        vacapi_social:
+            servername: social.vacapi.dev
+            serveraliases:
+                - www.social.vacapi.dev
+            docroot: /var/www/vacsapi/social/web
+            port: '80'
+            setenv:
+                - 'APP_ENV dev'
+            override:
+                - All
+            options:
+                - Indexes
+                - FollowSymLinks
+                - MultiViews
+            engine: php
+            custom_fragment: ''
+            ssl_cert: ''
+            ssl_key: ''
+            ssl_chain: ''
+            ssl_certs_dir: ''
+        vacapi_storage:
+            servername: storage.vacapi.dev
+            serveraliases:
+                - www.storage.vacapi.dev
+            docroot: /var/www/vacsapi/storage/web
             port: '80'
             setenv:
                 - 'APP_ENV dev'
